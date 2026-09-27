@@ -101,6 +101,7 @@ namespace DutyContent.Tab
 			chkUseNotifyDiscowk.Checked = DcConfig.Duty.UseNotifyDiscordWebhook;
 			txtDiscowkUrl.Text = DcConfig.Duty.NotifyDiscordWebhookUrl;
 			chkDiscowkTts.Checked = DcConfig.Duty.NotifyDiscordWebhookTts;
+			txtDiscowkUserId.Text = DcConfig.Duty.NotifyDiscordWebhookUserId;
 
 			btnTestNotify.Enabled = DcConfig.Duty.EnableNotify;
 
@@ -1235,6 +1236,7 @@ namespace DutyContent.Tab
 
 			DcConfig.Duty.UseNotifyDiscordWebhook = chkUseNotifyDiscowk.Checked;
 			txtDiscowkUrl.Enabled = chkUseNotifyDiscowk.Checked;
+			txtDiscowkUserId.Enabled = chkUseNotifyDiscowk.Checked;
 
 			btnTestNotify.Enabled = DcConfig.Duty.EnableNotify;
 
@@ -1259,6 +1261,18 @@ namespace DutyContent.Tab
 			}
 
 			btnTestNotify.Enabled = true;
+		}
+
+		private void TxtDiscowkUserId_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (!DcConfig.PluginEnable)
+				return;
+
+			if (e.KeyCode == Keys.Enter)
+			{
+				DcConfig.Duty.NotifyDiscordWebhookUserId = txtDiscowkUserId.Text.Trim();
+				SaveConfig();
+			}
 		}
 
 		private void ChkDiscowkTts_CheckedChanged(object sender, EventArgs e)
@@ -1297,10 +1311,22 @@ namespace DutyContent.Tab
 				SaveConfig();
 			}
 
+			var userId = txtDiscowkUserId.Text.Trim();
+
+			if (!userId.Equals(DcConfig.Duty.NotifyDiscordWebhookUserId))
+			{
+				DcConfig.Duty.NotifyDiscordWebhookUserId = userId;
+				SaveConfig();
+			}
+
+			var userIds = userId.Split(',');
+			var mentions = string.Join(" ", userIds.Select(id => $"<@{id.Trim()}>"));
+			var content = string.IsNullOrEmpty(userId) ? mesg : $"{mentions} {mesg}";
+
 			var hc = new HttpClient();
 			var param = new Dictionary<string, string>
 			{
-				{ "content", mesg },
+				{ "content", content },
 				{ "tts", DcConfig.Duty.NotifyDiscordWebhookTts.ToString() },
 			};
 
@@ -1637,7 +1663,7 @@ namespace DutyContent.Tab
 				var s = DataToByteString(data);
 				Logger.L("{0}({1},{2}) => {3}", opcode, data.Length, t, s);
 			}
-			else 
+			else
 #endif
 #if false
 			// 매칭 관련
@@ -1648,7 +1674,7 @@ namespace DutyContent.Tab
 			}
 #endif
 #if true
-			// 페이트 
+			// 페이트
 			(int t, int v) = IndexOfValues(data, 0,
 				// middle la noscea
 				553, 649, 687, 688, 693, 717, 220, 221, 222, 223, 225,
