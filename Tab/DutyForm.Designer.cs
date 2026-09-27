@@ -77,6 +77,8 @@ namespace DutyContent.Tab
 			this.lblDiscowkUrl = new System.Windows.Forms.Label();
 			this.txtDiscowkUrl = new System.Windows.Forms.TextBox();
 			this.chkUseNotifyDiscowk = new System.Windows.Forms.CheckBox();
+			this.lblDiscowkUserId = new System.Windows.Forms.Label();
+			this.txtDiscowkUserId = new System.Windows.Forms.TextBox();
 			this.lblTelegramToken = new System.Windows.Forms.Label();
 			this.txtTelegramToken = new System.Windows.Forms.TextBox();
 			this.lblTelegramId = new System.Windows.Forms.Label();
@@ -146,9 +148,9 @@ namespace DutyContent.Tab
 			this.tabPagePacket.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.SuspendLayout();
-			// 
+			//
 			// tabContent
-			// 
+			//
 			this.tabContent.Controls.Add(this.tabPageContent);
 			this.tabContent.Controls.Add(this.tabPageSetting);
 			this.tabContent.Controls.Add(this.tabPagePacket);
@@ -160,9 +162,9 @@ namespace DutyContent.Tab
 			this.tabContent.SelectedIndex = 0;
 			this.tabContent.Size = new System.Drawing.Size(804, 561);
 			this.tabContent.TabIndex = 0;
-			// 
+			//
 			// tabPageContent
-			// 
+			//
 			this.tabPageContent.Controls.Add(this.splitContainer1);
 			this.tabPageContent.ImageIndex = 0;
 			this.tabPageContent.Location = new System.Drawing.Point(4, 39);
@@ -173,32 +175,32 @@ namespace DutyContent.Tab
 			this.tabPageContent.TabIndex = 0;
 			this.tabPageContent.Text = "301";
 			this.tabPageContent.UseVisualStyleBackColor = true;
-			// 
+			//
 			// splitContainer1
-			// 
+			//
 			this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.splitContainer1.Location = new System.Drawing.Point(4, 4);
 			this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
 			this.splitContainer1.Name = "splitContainer1";
-			// 
+			//
 			// splitContainer1.Panel1
-			// 
+			//
 			this.splitContainer1.Panel1.Controls.Add(this.rdoFatePreset4);
 			this.splitContainer1.Panel1.Controls.Add(this.rdoFatePreset3);
 			this.splitContainer1.Panel1.Controls.Add(this.rdoFatePreset2);
 			this.splitContainer1.Panel1.Controls.Add(this.rdoFatePreset1);
 			this.splitContainer1.Panel1.Controls.Add(this.treeFates);
-			// 
+			//
 			// splitContainer1.Panel2
-			// 
+			//
 			this.splitContainer1.Panel2.Controls.Add(this.lstContents);
 			this.splitContainer1.Size = new System.Drawing.Size(788, 510);
 			this.splitContainer1.SplitterDistance = 240;
 			this.splitContainer1.SplitterWidth = 6;
 			this.splitContainer1.TabIndex = 0;
-			// 
+			//
 			// rdoFatePreset4
-			// 
+			//
 			this.rdoFatePreset4.AutoSize = true;
 			this.rdoFatePreset4.Checked = true;
 			this.rdoFatePreset4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,9 +214,9 @@ namespace DutyContent.Tab
 			this.rdoFatePreset4.Text = "4";
 			this.rdoFatePreset4.UseVisualStyleBackColor = true;
 			this.rdoFatePreset4.CheckedChanged += new System.EventHandler(this.RdoFatePreset4_CheckedChanged);
-			// 
+			//
 			// rdoFatePreset3
-			// 
+			//
 			this.rdoFatePreset3.AutoSize = true;
 			this.rdoFatePreset3.Checked = true;
 			this.rdoFatePreset3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,9 +230,9 @@ namespace DutyContent.Tab
 			this.rdoFatePreset3.Text = "3";
 			this.rdoFatePreset3.UseVisualStyleBackColor = true;
 			this.rdoFatePreset3.CheckedChanged += new System.EventHandler(this.RdoFatePreset3_CheckedChanged);
-			// 
+			//
 			// rdoFatePreset2
-			// 
+			//
 			this.rdoFatePreset2.AutoSize = true;
 			this.rdoFatePreset2.Checked = true;
 			this.rdoFatePreset2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,9 +246,9 @@ namespace DutyContent.Tab
 			this.rdoFatePreset2.Text = "2";
 			this.rdoFatePreset2.UseVisualStyleBackColor = true;
 			this.rdoFatePreset2.CheckedChanged += new System.EventHandler(this.RdoFatePreset2_CheckedChanged);
-			// 
+			//
 			// rdoFatePreset1
-			// 
+			//
 			this.rdoFatePreset1.AutoSize = true;
 			this.rdoFatePreset1.Checked = true;
 			this.rdoFatePreset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -260,11 +262,11 @@ namespace DutyContent.Tab
 			this.rdoFatePreset1.Text = "1";
 			this.rdoFatePreset1.UseVisualStyleBackColor = true;
 			this.rdoFatePreset1.CheckedChanged += new System.EventHandler(this.RdoFatePreset1_CheckedChanged);
-			// 
+			//
 			// treeFates
-			// 
-			this.treeFates.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.treeFates.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.treeFates.CheckBoxes = true;
 			this.treeFates.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,9 +276,9 @@ namespace DutyContent.Tab
 			this.treeFates.Size = new System.Drawing.Size(235, 481);
 			this.treeFates.TabIndex = 0;
 			this.treeFates.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.TreeFates_AfterCheck);
-			// 
+			//
 			// lstContents
-			// 
+			//
 			this.lstContents.CategoryTextFont = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
 			stringFormat1.Alignment = System.Drawing.StringAlignment.Center;
 			stringFormat1.HotkeyPrefix = System.Drawing.Text.HotkeyPrefix.None;
@@ -297,9 +299,9 @@ namespace DutyContent.Tab
 			this.lstContents.TabIndex = 0;
 			this.lstContents.UseCompatibleStateImageBehavior = false;
 			this.lstContents.View = System.Windows.Forms.View.Details;
-			// 
+			//
 			// tabPageSetting
-			// 
+			//
 			this.tabPageSetting.AutoScroll = true;
 			this.tabPageSetting.Controls.Add(this.panel4);
 			this.tabPageSetting.Controls.Add(this.panel3);
@@ -314,13 +316,15 @@ namespace DutyContent.Tab
 			this.tabPageSetting.TabIndex = 1;
 			this.tabPageSetting.Text = "302";
 			this.tabPageSetting.UseVisualStyleBackColor = true;
-			// 
+			//
 			// panel4
-			// 
-			this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel4.Controls.Add(this.chkDiscowkTts);
+			this.panel4.Controls.Add(this.lblDiscowkUserId);
+			this.panel4.Controls.Add(this.txtDiscowkUserId);
 			this.panel4.Controls.Add(this.lblDiscowkUrl);
 			this.panel4.Controls.Add(this.txtDiscowkUrl);
 			this.panel4.Controls.Add(this.chkUseNotifyDiscowk);
@@ -337,11 +341,11 @@ namespace DutyContent.Tab
 			this.panel4.Location = new System.Drawing.Point(0, 267);
 			this.panel4.Margin = new System.Windows.Forms.Padding(4);
 			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(792, 228);
+			this.panel4.Size = new System.Drawing.Size(792, 262);
 			this.panel4.TabIndex = 3;
-			// 
+			//
 			// chkDiscowkTts
-			// 
+			//
 			this.chkDiscowkTts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.chkDiscowkTts.AutoSize = true;
 			this.chkDiscowkTts.Location = new System.Drawing.Point(543, 168);
@@ -352,9 +356,9 @@ namespace DutyContent.Tab
 			this.chkDiscowkTts.Text = "341";
 			this.chkDiscowkTts.UseVisualStyleBackColor = true;
 			this.chkDiscowkTts.CheckedChanged += new System.EventHandler(this.ChkDiscowkTts_CheckedChanged);
-			// 
+			//
 			// lblDiscowkUrl
-			// 
+			//
 			this.lblDiscowkUrl.AutoSize = true;
 			this.lblDiscowkUrl.Location = new System.Drawing.Point(33, 194);
 			this.lblDiscowkUrl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -362,10 +366,10 @@ namespace DutyContent.Tab
 			this.lblDiscowkUrl.Size = new System.Drawing.Size(32, 18);
 			this.lblDiscowkUrl.TabIndex = 18;
 			this.lblDiscowkUrl.Text = "339";
-			// 
+			//
 			// txtDiscowkUrl
-			// 
-			this.txtDiscowkUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.txtDiscowkUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.txtDiscowkUrl.Location = new System.Drawing.Point(160, 194);
 			this.txtDiscowkUrl.Margin = new System.Windows.Forms.Padding(4);
@@ -373,9 +377,30 @@ namespace DutyContent.Tab
 			this.txtDiscowkUrl.Size = new System.Drawing.Size(434, 24);
 			this.txtDiscowkUrl.TabIndex = 17;
 			this.txtDiscowkUrl.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtDiscowkUrl_KeyDown);
-			// 
+			//
+			// lblDiscowkUserId
+			//
+			this.lblDiscowkUserId.AutoSize = true;
+			this.lblDiscowkUserId.Location = new System.Drawing.Point(33, 228);
+			this.lblDiscowkUserId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lblDiscowkUserId.Name = "lblDiscowkUserId";
+			this.lblDiscowkUserId.Size = new System.Drawing.Size(32, 18);
+			this.lblDiscowkUserId.TabIndex = 19;
+			this.lblDiscowkUserId.Text = "Discord User ID";
+			//
+			// txtDiscowkUserId
+			//
+			this.txtDiscowkUserId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.txtDiscowkUserId.Location = new System.Drawing.Point(160, 228);
+			this.txtDiscowkUserId.Margin = new System.Windows.Forms.Padding(4);
+			this.txtDiscowkUserId.Name = "txtDiscowkUserId";
+			this.txtDiscowkUserId.Size = new System.Drawing.Size(434, 24);
+			this.txtDiscowkUserId.TabIndex = 20;
+			this.txtDiscowkUserId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtDiscowkUserId_KeyDown);
+			//
 			// chkUseNotifyDiscowk
-			// 
+			//
 			this.chkUseNotifyDiscowk.AutoSize = true;
 			this.chkUseNotifyDiscowk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkUseNotifyDiscowk.Location = new System.Drawing.Point(4, 166);
@@ -386,9 +411,9 @@ namespace DutyContent.Tab
 			this.chkUseNotifyDiscowk.Text = "338";
 			this.chkUseNotifyDiscowk.UseVisualStyleBackColor = true;
 			this.chkUseNotifyDiscowk.CheckedChanged += new System.EventHandler(this.ChkUseNotifyDiscowk_CheckedChanged);
-			// 
+			//
 			// lblTelegramToken
-			// 
+			//
 			this.lblTelegramToken.AutoSize = true;
 			this.lblTelegramToken.Location = new System.Drawing.Point(33, 129);
 			this.lblTelegramToken.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -396,10 +421,10 @@ namespace DutyContent.Tab
 			this.lblTelegramToken.Size = new System.Drawing.Size(32, 18);
 			this.lblTelegramToken.TabIndex = 15;
 			this.lblTelegramToken.Text = "315";
-			// 
+			//
 			// txtTelegramToken
-			// 
-			this.txtTelegramToken.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.txtTelegramToken.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.txtTelegramToken.Location = new System.Drawing.Point(160, 126);
 			this.txtTelegramToken.Margin = new System.Windows.Forms.Padding(4);
@@ -407,9 +432,9 @@ namespace DutyContent.Tab
 			this.txtTelegramToken.Size = new System.Drawing.Size(434, 24);
 			this.txtTelegramToken.TabIndex = 14;
 			this.txtTelegramToken.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtTelegramToken_KeyDown);
-			// 
+			//
 			// lblTelegramId
-			// 
+			//
 			this.lblTelegramId.AutoSize = true;
 			this.lblTelegramId.Location = new System.Drawing.Point(33, 97);
 			this.lblTelegramId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -417,18 +442,18 @@ namespace DutyContent.Tab
 			this.lblTelegramId.Size = new System.Drawing.Size(32, 18);
 			this.lblTelegramId.TabIndex = 13;
 			this.lblTelegramId.Text = "314";
-			// 
+			//
 			// txtTelegramId
-			// 
+			//
 			this.txtTelegramId.Location = new System.Drawing.Point(160, 94);
 			this.txtTelegramId.Margin = new System.Windows.Forms.Padding(4);
 			this.txtTelegramId.Name = "txtTelegramId";
 			this.txtTelegramId.Size = new System.Drawing.Size(173, 24);
 			this.txtTelegramId.TabIndex = 12;
 			this.txtTelegramId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtTelegramId_KeyDown);
-			// 
+			//
 			// chkUseNotifyTelegram
-			// 
+			//
 			this.chkUseNotifyTelegram.AutoSize = true;
 			this.chkUseNotifyTelegram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkUseNotifyTelegram.Location = new System.Drawing.Point(4, 69);
@@ -439,9 +464,9 @@ namespace DutyContent.Tab
 			this.chkUseNotifyTelegram.Text = "313";
 			this.chkUseNotifyTelegram.UseVisualStyleBackColor = true;
 			this.chkUseNotifyTelegram.CheckedChanged += new System.EventHandler(this.ChkUseNotifyTelegram_CheckedChanged);
-			// 
+			//
 			// btnTestNotify
-			// 
+			//
 			this.btnTestNotify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnTestNotify.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.btnTestNotify.Enabled = false;
@@ -453,9 +478,9 @@ namespace DutyContent.Tab
 			this.btnTestNotify.Text = "340";
 			this.btnTestNotify.UseVisualStyleBackColor = true;
 			this.btnTestNotify.Click += new System.EventHandler(this.BtnTestNotify_Click);
-			// 
+			//
 			// lblLineNotifyBotLink
-			// 
+			//
 			this.lblLineNotifyBotLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblLineNotifyBotLink.AutoSize = true;
 			this.lblLineNotifyBotLink.Location = new System.Drawing.Point(618, 6);
@@ -466,9 +491,9 @@ namespace DutyContent.Tab
 			this.lblLineNotifyBotLink.TabStop = true;
 			this.lblLineNotifyBotLink.Text = "https://notify-bot.line.me/";
 			this.lblLineNotifyBotLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblLineNotifyBotLink_LinkClicked);
-			// 
+			//
 			// lblLineToken
-			// 
+			//
 			this.lblLineToken.AutoSize = true;
 			this.lblLineToken.Location = new System.Drawing.Point(33, 32);
 			this.lblLineToken.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -476,10 +501,10 @@ namespace DutyContent.Tab
 			this.lblLineToken.Size = new System.Drawing.Size(32, 18);
 			this.lblLineToken.TabIndex = 9;
 			this.lblLineToken.Text = "312";
-			// 
+			//
 			// txtLineToken
-			// 
-			this.txtLineToken.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.txtLineToken.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.txtLineToken.Location = new System.Drawing.Point(160, 29);
 			this.txtLineToken.Margin = new System.Windows.Forms.Padding(4);
@@ -487,9 +512,9 @@ namespace DutyContent.Tab
 			this.txtLineToken.Size = new System.Drawing.Size(434, 24);
 			this.txtLineToken.TabIndex = 1;
 			this.txtLineToken.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtLineToken_KeyDown);
-			// 
+			//
 			// chkUseNotifyLine
-			// 
+			//
 			this.chkUseNotifyLine.AutoSize = true;
 			this.chkUseNotifyLine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkUseNotifyLine.Location = new System.Drawing.Point(4, 4);
@@ -500,10 +525,10 @@ namespace DutyContent.Tab
 			this.chkUseNotifyLine.Text = "311";
 			this.chkUseNotifyLine.UseVisualStyleBackColor = true;
 			this.chkUseNotifyLine.CheckedChanged += new System.EventHandler(this.ChkUseNotifyLine_CheckedChanged);
-			// 
+			//
 			// panel3
-			// 
-			this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel3.Controls.Add(this.btnResetContentList);
@@ -517,9 +542,9 @@ namespace DutyContent.Tab
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(792, 77);
 			this.panel3.TabIndex = 2;
-			// 
+			//
 			// btnResetContentList
-			// 
+			//
 			this.btnResetContentList.Location = new System.Drawing.Point(708, 42);
 			this.btnResetContentList.Name = "btnResetContentList";
 			this.btnResetContentList.Size = new System.Drawing.Size(78, 30);
@@ -528,9 +553,9 @@ namespace DutyContent.Tab
 			this.btnResetContentList.UseVisualStyleBackColor = true;
 			this.btnResetContentList.Visible = false;
 			this.btnResetContentList.Click += new System.EventHandler(this.BtnResetContentList_Click);
-			// 
+			//
 			// cboPacketset
-			// 
+			//
 			this.cboPacketset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cboPacketset.FormattingEnabled = true;
 			this.cboPacketset.Location = new System.Drawing.Point(160, 42);
@@ -539,9 +564,9 @@ namespace DutyContent.Tab
 			this.cboPacketset.Size = new System.Drawing.Size(362, 26);
 			this.cboPacketset.TabIndex = 13;
 			this.cboPacketset.SelectedIndexChanged += new System.EventHandler(this.CboPacketset_SelectedIndexChanged);
-			// 
+			//
 			// lblPacketSet
-			// 
+			//
 			this.lblPacketSet.AutoSize = true;
 			this.lblPacketSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblPacketSet.Location = new System.Drawing.Point(32, 44);
@@ -550,9 +575,9 @@ namespace DutyContent.Tab
 			this.lblPacketSet.Size = new System.Drawing.Size(39, 20);
 			this.lblPacketSet.TabIndex = 12;
 			this.lblPacketSet.Text = "336";
-			// 
+			//
 			// lblCurrentDataSet
-			// 
+			//
 			this.lblCurrentDataSet.AutoSize = true;
 			this.lblCurrentDataSet.Location = new System.Drawing.Point(418, 13);
 			this.lblCurrentDataSet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -560,9 +585,9 @@ namespace DutyContent.Tab
 			this.lblCurrentDataSet.Size = new System.Drawing.Size(18, 18);
 			this.lblCurrentDataSet.TabIndex = 3;
 			this.lblCurrentDataSet.Text = "--";
-			// 
+			//
 			// cboDataset
-			// 
+			//
 			this.cboDataset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cboDataset.FormattingEnabled = true;
 			this.cboDataset.Location = new System.Drawing.Point(160, 8);
@@ -571,9 +596,9 @@ namespace DutyContent.Tab
 			this.cboDataset.Size = new System.Drawing.Size(250, 26);
 			this.cboDataset.TabIndex = 11;
 			this.cboDataset.SelectedIndexChanged += new System.EventHandler(this.CboDataset_SelectedIndexChanged);
-			// 
+			//
 			// lblDataSet
-			// 
+			//
 			this.lblDataSet.AutoSize = true;
 			this.lblDataSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblDataSet.Location = new System.Drawing.Point(32, 10);
@@ -582,10 +607,10 @@ namespace DutyContent.Tab
 			this.lblDataSet.Size = new System.Drawing.Size(39, 20);
 			this.lblDataSet.TabIndex = 10;
 			this.lblDataSet.Text = "304";
-			// 
+			//
 			// panel2
-			// 
-			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel2.Controls.Add(this.btnSoundPlayFate);
@@ -602,9 +627,9 @@ namespace DutyContent.Tab
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(792, 98);
 			this.panel2.TabIndex = 1;
-			// 
+			//
 			// btnSoundPlayFate
-			// 
+			//
 			this.btnSoundPlayFate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnSoundPlayFate.Enabled = false;
 			this.btnSoundPlayFate.Image = global::DutyContent.Properties.Resources.pix_play;
@@ -615,9 +640,9 @@ namespace DutyContent.Tab
 			this.btnSoundPlayFate.TabIndex = 8;
 			this.btnSoundPlayFate.UseVisualStyleBackColor = true;
 			this.btnSoundPlayFate.Click += new System.EventHandler(this.BtnSoundPlayFate_Click);
-			// 
+			//
 			// btnSoundPlayInstance
-			// 
+			//
 			this.btnSoundPlayInstance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnSoundPlayInstance.Enabled = false;
 			this.btnSoundPlayInstance.Image = global::DutyContent.Properties.Resources.pix_play;
@@ -628,9 +653,9 @@ namespace DutyContent.Tab
 			this.btnSoundPlayInstance.TabIndex = 7;
 			this.btnSoundPlayInstance.UseVisualStyleBackColor = true;
 			this.btnSoundPlayInstance.Click += new System.EventHandler(this.BtnSoundPlayInstance_Click);
-			// 
+			//
 			// btnSoundFindFate
-			// 
+			//
 			this.btnSoundFindFate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnSoundFindFate.Enabled = false;
 			this.btnSoundFindFate.Image = global::DutyContent.Properties.Resources.pix_magnify;
@@ -641,9 +666,9 @@ namespace DutyContent.Tab
 			this.btnSoundFindFate.TabIndex = 6;
 			this.btnSoundFindFate.UseVisualStyleBackColor = true;
 			this.btnSoundFindFate.Click += new System.EventHandler(this.BtnSoundFindFate_Click);
-			// 
+			//
 			// btnSoundFindInstance
-			// 
+			//
 			this.btnSoundFindInstance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnSoundFindInstance.Enabled = false;
 			this.btnSoundFindInstance.Image = global::DutyContent.Properties.Resources.pix_magnify;
@@ -654,9 +679,9 @@ namespace DutyContent.Tab
 			this.btnSoundFindInstance.TabIndex = 2;
 			this.btnSoundFindInstance.UseVisualStyleBackColor = true;
 			this.btnSoundFindInstance.Click += new System.EventHandler(this.BtnSoundFindInstance_Click);
-			// 
+			//
 			// lblSoundFate
-			// 
+			//
 			this.lblSoundFate.AutoSize = true;
 			this.lblSoundFate.Location = new System.Drawing.Point(33, 65);
 			this.lblSoundFate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -664,10 +689,10 @@ namespace DutyContent.Tab
 			this.lblSoundFate.Size = new System.Drawing.Size(32, 18);
 			this.lblSoundFate.TabIndex = 3;
 			this.lblSoundFate.Text = "310";
-			// 
+			//
 			// txtSoundFate
-			// 
-			this.txtSoundFate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.txtSoundFate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.txtSoundFate.Enabled = false;
 			this.txtSoundFate.Location = new System.Drawing.Point(160, 62);
@@ -676,10 +701,10 @@ namespace DutyContent.Tab
 			this.txtSoundFate.ReadOnly = true;
 			this.txtSoundFate.Size = new System.Drawing.Size(550, 24);
 			this.txtSoundFate.TabIndex = 4;
-			// 
+			//
 			// txtSoundInstance
-			// 
-			this.txtSoundInstance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.txtSoundInstance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.txtSoundInstance.Enabled = false;
 			this.txtSoundInstance.Location = new System.Drawing.Point(160, 30);
@@ -688,9 +713,9 @@ namespace DutyContent.Tab
 			this.txtSoundInstance.ReadOnly = true;
 			this.txtSoundInstance.Size = new System.Drawing.Size(550, 24);
 			this.txtSoundInstance.TabIndex = 5;
-			// 
+			//
 			// chkEnableSound
-			// 
+			//
 			this.chkEnableSound.AutoSize = true;
 			this.chkEnableSound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkEnableSound.Location = new System.Drawing.Point(8, 4);
@@ -701,9 +726,9 @@ namespace DutyContent.Tab
 			this.chkEnableSound.Text = "308";
 			this.chkEnableSound.UseVisualStyleBackColor = true;
 			this.chkEnableSound.CheckedChanged += new System.EventHandler(this.ChkEnableSound_CheckedChanged);
-			// 
+			//
 			// lblSoundInstance
-			// 
+			//
 			this.lblSoundInstance.AutoSize = true;
 			this.lblSoundInstance.Location = new System.Drawing.Point(33, 33);
 			this.lblSoundInstance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -711,10 +736,10 @@ namespace DutyContent.Tab
 			this.lblSoundInstance.Size = new System.Drawing.Size(32, 18);
 			this.lblSoundInstance.TabIndex = 2;
 			this.lblSoundInstance.Text = "309";
-			// 
+			//
 			// panel1
-			// 
-			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel1.Controls.Add(this.chkOverlayAutoHide);
@@ -728,9 +753,9 @@ namespace DutyContent.Tab
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(792, 60);
 			this.panel1.TabIndex = 0;
-			// 
+			//
 			// chkOverlayAutoHide
-			// 
+			//
 			this.chkOverlayAutoHide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.chkOverlayAutoHide.AutoSize = true;
 			this.chkOverlayAutoHide.Location = new System.Drawing.Point(681, 33);
@@ -742,9 +767,9 @@ namespace DutyContent.Tab
 			this.chkOverlayAutoHide.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.chkOverlayAutoHide.UseVisualStyleBackColor = true;
 			this.chkOverlayAutoHide.CheckedChanged += new System.EventHandler(this.ChkOverlayAutoHide_CheckedChanged);
-			// 
+			//
 			// chkOverlayClickThru
-			// 
+			//
 			this.chkOverlayClickThru.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.chkOverlayClickThru.AutoSize = true;
 			this.chkOverlayClickThru.Location = new System.Drawing.Point(681, 3);
@@ -756,9 +781,9 @@ namespace DutyContent.Tab
 			this.chkOverlayClickThru.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.chkOverlayClickThru.UseVisualStyleBackColor = true;
 			this.chkOverlayClickThru.CheckedChanged += new System.EventHandler(this.ChkOverlayClickThru_CheckedChanged);
-			// 
+			//
 			// progbOverlayTransparent
-			// 
+			//
 			this.progbOverlayTransparent.Enabled = false;
 			this.progbOverlayTransparent.Location = new System.Drawing.Point(160, 18);
 			this.progbOverlayTransparent.Margin = new System.Windows.Forms.Padding(4);
@@ -767,9 +792,9 @@ namespace DutyContent.Tab
 			this.progbOverlayTransparent.Size = new System.Drawing.Size(364, 32);
 			this.progbOverlayTransparent.TabIndex = 1;
 			this.progbOverlayTransparent.Click += new System.EventHandler(this.ProgbOverlayTransparent_Click);
-			// 
+			//
 			// btnOverlayDimming
-			// 
+			//
 			this.btnOverlayDimming.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnOverlayDimming.BackgroundImage = global::DutyContent.Properties.Resources.pix_annotation;
 			this.btnOverlayDimming.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -781,9 +806,9 @@ namespace DutyContent.Tab
 			this.btnOverlayDimming.TabIndex = 3;
 			this.btnOverlayDimming.UseVisualStyleBackColor = true;
 			this.btnOverlayDimming.Click += new System.EventHandler(this.BtnOverlayDimming_Click);
-			// 
+			//
 			// lblOverlayTransparent
-			// 
+			//
 			this.lblOverlayTransparent.AutoSize = true;
 			this.lblOverlayTransparent.Enabled = false;
 			this.lblOverlayTransparent.Location = new System.Drawing.Point(33, 30);
@@ -792,9 +817,9 @@ namespace DutyContent.Tab
 			this.lblOverlayTransparent.Size = new System.Drawing.Size(32, 18);
 			this.lblOverlayTransparent.TabIndex = 2;
 			this.lblOverlayTransparent.Text = "307";
-			// 
+			//
 			// chkEnableOverlay
-			// 
+			//
 			this.chkEnableOverlay.AutoSize = true;
 			this.chkEnableOverlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.chkEnableOverlay.Location = new System.Drawing.Point(4, 4);
@@ -805,9 +830,9 @@ namespace DutyContent.Tab
 			this.chkEnableOverlay.Text = "306";
 			this.chkEnableOverlay.UseVisualStyleBackColor = true;
 			this.chkEnableOverlay.CheckedChanged += new System.EventHandler(this.ChkEnableOverlay_CheckedChanged);
-			// 
+			//
 			// tabPagePacket
-			// 
+			//
 			this.tabPagePacket.AutoScroll = true;
 			this.tabPagePacket.Controls.Add(this.panel5);
 			this.tabPagePacket.ImageIndex = 2;
@@ -819,10 +844,10 @@ namespace DutyContent.Tab
 			this.tabPagePacket.TabIndex = 2;
 			this.tabPagePacket.Text = "337";
 			this.tabPagePacket.UseVisualStyleBackColor = true;
-			// 
+			//
 			// panel5
-			// 
-			this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel5.Controls.Add(this.lblPacketVersion);
@@ -840,9 +865,9 @@ namespace DutyContent.Tab
 			this.panel5.Name = "panel5";
 			this.panel5.Size = new System.Drawing.Size(792, 361);
 			this.panel5.TabIndex = 0;
-			// 
+			//
 			// lblPacketVersion
-			// 
+			//
 			this.lblPacketVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblPacketVersion.Location = new System.Drawing.Point(559, 81);
 			this.lblPacketVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -851,10 +876,10 @@ namespace DutyContent.Tab
 			this.lblPacketVersion.TabIndex = 9;
 			this.lblPacketVersion.Text = "--";
 			this.lblPacketVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
+			//
 			// txtPacketDescription
-			// 
-			this.txtPacketDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.txtPacketDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.txtPacketDescription.Enabled = false;
 			this.txtPacketDescription.Location = new System.Drawing.Point(341, 106);
@@ -862,9 +887,9 @@ namespace DutyContent.Tab
 			this.txtPacketDescription.Name = "txtPacketDescription";
 			this.txtPacketDescription.Size = new System.Drawing.Size(443, 24);
 			this.txtPacketDescription.TabIndex = 8;
-			// 
+			//
 			// lblPacketDesc
-			// 
+			//
 			this.lblPacketDesc.AutoSize = true;
 			this.lblPacketDesc.Location = new System.Drawing.Point(340, 81);
 			this.lblPacketDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -872,9 +897,9 @@ namespace DutyContent.Tab
 			this.lblPacketDesc.Size = new System.Drawing.Size(32, 18);
 			this.lblPacketDesc.TabIndex = 7;
 			this.lblPacketDesc.Text = "317";
-			// 
+			//
 			// btnPacketApply
-			// 
+			//
 			this.btnPacketApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnPacketApply.Enabled = false;
 			this.btnPacketApply.Location = new System.Drawing.Point(601, 4);
@@ -886,9 +911,9 @@ namespace DutyContent.Tab
 			this.btnPacketApply.UseVisualStyleBackColor = true;
 			this.btnPacketApply.Visible = false;
 			this.btnPacketApply.Click += new System.EventHandler(this.BtnPacketApply_Click);
-			// 
+			//
 			// btnPacketStart
-			// 
+			//
 			this.btnPacketStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnPacketStart.Location = new System.Drawing.Point(407, 4);
 			this.btnPacketStart.Margin = new System.Windows.Forms.Padding(4);
@@ -898,10 +923,10 @@ namespace DutyContent.Tab
 			this.btnPacketStart.Text = "10007";
 			this.btnPacketStart.UseVisualStyleBackColor = true;
 			this.btnPacketStart.Click += new System.EventHandler(this.BtnPacketStart_Click);
-			// 
+			//
 			// lstBozjaInfo
-			// 
-			this.lstBozjaInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			//
+			this.lstBozjaInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.lstBozjaInfo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
@@ -923,29 +948,29 @@ namespace DutyContent.Tab
 			this.lstBozjaInfo.View = System.Windows.Forms.View.Details;
 			this.lstBozjaInfo.SelectedIndexChanged += new System.EventHandler(this.LstBozjaInfo_SelectedIndexChanged);
 			this.lstBozjaInfo.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.LstBozjaInfo_MouseDoubleClick);
-			// 
+			//
 			// columnHeader5
-			// 
+			//
 			this.columnHeader5.Text = "Name";
 			this.columnHeader5.Width = 180;
-			// 
+			//
 			// columnHeader6
-			// 
+			//
 			this.columnHeader6.Text = "Status";
 			this.columnHeader6.Width = 67;
-			// 
+			//
 			// columnHeader7
-			// 
+			//
 			this.columnHeader7.Text = "Member";
 			this.columnHeader7.Width = 72;
-			// 
+			//
 			// columnHeader8
-			// 
+			//
 			this.columnHeader8.Text = "Progress";
 			this.columnHeader8.Width = 73;
-			// 
+			//
 			// lblPacketBozja
-			// 
+			//
 			this.lblPacketBozja.AutoSize = true;
 			this.lblPacketBozja.Location = new System.Drawing.Point(340, 142);
 			this.lblPacketBozja.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -953,9 +978,9 @@ namespace DutyContent.Tab
 			this.lblPacketBozja.Size = new System.Drawing.Size(32, 18);
 			this.lblPacketBozja.TabIndex = 3;
 			this.lblPacketBozja.Text = "318";
-			// 
+			//
 			// txtPacketInfo
-			// 
+			//
 			this.txtPacketInfo.BackColor = System.Drawing.SystemColors.Window;
 			this.txtPacketInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtPacketInfo.Enabled = false;
@@ -966,9 +991,9 @@ namespace DutyContent.Tab
 			this.txtPacketInfo.ReadOnly = true;
 			this.txtPacketInfo.Size = new System.Drawing.Size(328, 123);
 			this.txtPacketInfo.TabIndex = 2;
-			// 
+			//
 			// lstPacketInfo
-			// 
+			//
 			this.lstPacketInfo.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -996,29 +1021,29 @@ namespace DutyContent.Tab
 			this.lstPacketInfo.View = System.Windows.Forms.View.Details;
 			this.lstPacketInfo.SelectedIndexChanged += new System.EventHandler(this.LstPacketInfo_SelectedIndexChanged);
 			this.lstPacketInfo.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.LstPacketInfo_MouseDoubleClick);
-			// 
+			//
 			// columnHeader1
-			// 
+			//
 			this.columnHeader1.Text = "Function";
 			this.columnHeader1.Width = 101;
-			// 
+			//
 			// columnHeader2
-			// 
+			//
 			this.columnHeader2.Text = "Current";
 			this.columnHeader2.Width = 70;
-			// 
+			//
 			// columnHeader3
-			// 
+			//
 			this.columnHeader3.Text = "Status";
 			this.columnHeader3.Width = 80;
-			// 
+			//
 			// columnHeader4
-			// 
+			//
 			this.columnHeader4.Text = "Found";
 			this.columnHeader4.Width = 70;
-			// 
+			//
 			// lblPacketFinder
-			// 
+			//
 			this.lblPacketFinder.AutoSize = true;
 			this.lblPacketFinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblPacketFinder.Location = new System.Drawing.Point(4, -1);
@@ -1027,18 +1052,18 @@ namespace DutyContent.Tab
 			this.lblPacketFinder.Size = new System.Drawing.Size(43, 24);
 			this.lblPacketFinder.TabIndex = 0;
 			this.lblPacketFinder.Text = "316";
-			// 
+			//
 			// ilTabContent
-			// 
+			//
 			this.ilTabContent.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilTabContent.ImageStream")));
 			this.ilTabContent.TransparentColor = System.Drawing.Color.Transparent;
 			this.ilTabContent.Images.SetKeyName(0, "pix_tab_content.png");
 			this.ilTabContent.Images.SetKeyName(1, "pix_tab_setting.png");
 			this.ilTabContent.Images.SetKeyName(2, "pix_tab_tool.png");
 			this.ilTabContent.Images.SetKeyName(3, "pix_tab_ping.png");
-			// 
+			//
 			// DutyForm
-			// 
+			//
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
@@ -1142,6 +1167,8 @@ namespace DutyContent.Tab
 		private System.Windows.Forms.TextBox txtDiscowkUrl;
 		private System.Windows.Forms.CheckBox chkUseNotifyDiscowk;
 		private System.Windows.Forms.CheckBox chkDiscowkTts;
+		private System.Windows.Forms.Label lblDiscowkUserId;
+		private System.Windows.Forms.TextBox txtDiscowkUserId;
 		private Libre.ContentListView lstContents;
 		private System.Windows.Forms.Button btnResetContentList;
 		private System.Windows.Forms.CheckBox chkOverlayAutoHide;
